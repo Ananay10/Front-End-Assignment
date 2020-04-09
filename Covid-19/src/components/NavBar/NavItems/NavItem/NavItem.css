@@ -1,0 +1,16 @@
+.NavItem{
+  padding: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.NavItem:first-child{
+  border-bottom: 4px solid red;
+    color: red;
+}
+.NavItem:hover,
+.NavItem:active,
+.NavItem.active {
+  color: #40A4C8;
+}

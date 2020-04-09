@@ -1,0 +1,19 @@
+import React from 'react';
+import Logo from '../Logo/Logo';
+import NavItem from './NavItem/NavItem';
+import classes from './NavItems.css';
+
+const Navitems = () => {
+  return (
+    <React.Fragment>
+      <Logo />
+      <ul className={classes.NavItems}>
+        <NavItem>Home</NavItem>
+        <NavItem>FAQ</NavItem>
+        <NavItem>Helpful Links</NavItem>
+      </ul>
+      </React.Fragment>
+  
+  );
+}
+export default Navitems;
