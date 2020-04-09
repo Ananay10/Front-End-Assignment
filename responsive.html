@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="tablet1.css" media="screen and (max-width:768px) and (min-width:481px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width:1024px) and (min-width:769px)">
+    <script src="https://kit.fontawesome.com/baffaac617.js" crossorigin="anonymous"></script>
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top">
+                <div class="site-heading">Responsive Layout</div>
+                <nav>
+
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger" />
+
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#">Generic</a></li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cover-text">
+                <div class="welcome">Welcome</div>
+                <div class="travel">
+                    <a href="#">
+                        <i class="fas fa-car fa-3x"></i><br>
+                        <span class="ltext">Travel</span><br>
+                        <span class="text">Choose a ride</span>
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="#">
+                        <i class="fas fa-camera fa-3x"></i><br>
+                        <span class="ltext">Gallery</span><br>
+                        <span class="text">Choose photos</span>
+                    </a>
+                </div>
+            </div>
+            <div class="get-started">
+                <a href="#" class="green-button">GET STARTED</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box">
+                <div id="lfloat">
+                    <img src="./img/phone.jpg" alt="phone">
+                    <div class="box-header">Lorem ipsum<br>dolor sit amet.</div>
+                    <div class="box-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                        similique tempora labore aut magnam, cum eaque dicta minima earum quam!
+                    </div>
+                    <a href="#" class="green-button">LEARN MORE</a>
+                </div>
+                <div id="rfloat">
+                    <img src="./img/camera.jpg" alt="camera">
+                    <div class="box-header">Lorem ipsum<br>olor sit amet.</div>
+                    <div class="box-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                        similique tempora labore aut magnam, cum eaque dicta minima earum quam!
+                    </div>
+                    <a href="#" class="green-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
