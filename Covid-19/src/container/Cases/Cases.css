@@ -1,0 +1,34 @@
+.CurrentSituations {
+    display: flex;
+    width: 60%;
+    /* width:calc(100% /4); */
+    justify-content: space-between;
+    margin: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  .CaseHolder{
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .CaseHeading{
+    display: block;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+  
+  .CaseNumber{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .CaseGraph{
+    /* flex: 1; */
+    margin-left: 1.4rem;
+    height: 60px;
+    width: 80px;
+  border: 1px solid #ccc;
+  }
