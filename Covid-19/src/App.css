@@ -1,0 +1,6 @@
+.ListnMap{
+    display: flex;
+    max-width: 75vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }

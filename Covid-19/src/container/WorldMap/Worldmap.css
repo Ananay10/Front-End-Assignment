@@ -1,0 +1,41 @@
+.WorldMap{
+    flex:2;
+  }
+  
+  .Map{
+    margin: 1rem;
+    margin-top: 0;
+  }
+  
+  .MapHeading{
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .MapHeading div{
+    flex:1;
+  }
+  
+  .ColorLabels{
+    display: flex;
+    font-size: 14px;
+  }
+  
+  .Most{
+    display: inline-block;
+    height: 15px;
+    width: 10px;
+    margin-right: 2px;
+    background-color: #6495ED;
+    border-radius: 2px;
+  }
+  
+  .Least{
+    display: inline-block;
+    height: 15px;
+    width: 10px;
+    margin-right: 2px;
+    background-color: #00BFFF;
+    border-radius: 2px;
+  }
+  

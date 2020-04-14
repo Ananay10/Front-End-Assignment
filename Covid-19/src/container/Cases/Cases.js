@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Holder from "../../Hoc/holder";
 import classes from "./Cases.css";
 import axios from "axios";
+import RedGraph from '../../assets/Graph.svg';  
+import GreenGraph from '../../assets/Green.svg'; 
 
 const Currentcases = (props) => {
   const [cases, setCases] = useState([]);
@@ -49,7 +51,9 @@ const Currentcases = (props) => {
               <span className={classes.CaseHeading}>{item.heading}</span>
               <span className={classes.CaseNumber}>{item.casesCount}</span>
             </span>
-            <span className={classes.CaseGraph}></span>
+            <span className={classes.CaseGraph}>
+      {item.heading="Recovered" ? <img src={GreenGraph} alt='greeen'/> : <img src={RedGraph} alt='red' /> }
+      </span> 
           </div>
         </Holder>
       ))}
