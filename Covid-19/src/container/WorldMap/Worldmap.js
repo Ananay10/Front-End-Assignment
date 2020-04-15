@@ -21,7 +21,6 @@ const WorldMap = () => {
         let convertedArray = [];
         response.data.map((country) => {
           if (country.countryInfo.iso2) {
-            // eslint-disable-next-line
             let countryArray = new Array(
               country.countryInfo.iso2.toLowerCase(),
               country.cases
@@ -37,10 +36,7 @@ const WorldMap = () => {
       });
   }, []);
 
-  const mapOptions = {
-    chart: {
-    //   backgroundColor: "#FBF6F6",
-    },
+  const Mapicons = {
     title: {
       text: "",
     },
@@ -51,14 +47,7 @@ const WorldMap = () => {
         // float: "right",
       },
     },
-    // colorAxis: {
-    //   min: 0,
-    //   stops: [
-    //     [0.005, "#FFC4C6"],
-    //     [0.01, "#FF6F7D"],
-    //     [0.2, "#FF0019"],
-    //   ],
-    // },
+   
 
     series: [
       {
@@ -74,7 +63,7 @@ const WorldMap = () => {
       <Holder>
         <div className={classes.MapHeading}>
           <div style={{ fontWeight: "bold" }}>COVID-19 Affected Areas</div>
-          <div className={classes.ColorLabels}>
+          <div className={classes.SideHeading}>
             <div>
               <span className={classes.Most}></span> Most Affected
             </div>
@@ -85,7 +74,7 @@ const WorldMap = () => {
         </div>
         <div className={classes.Map}>
           <HighchartsReact
-            options={mapOptions}
+            options={Mapicons}
              constructorType={"mapChart"}
             highcharts={Highcharts}
             /> 

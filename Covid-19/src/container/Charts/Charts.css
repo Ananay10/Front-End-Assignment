@@ -1,0 +1,44 @@
+.Chart{
+    flex:1
+  }
+  
+  .Graph{
+    margin: 1rem;
+  }
+  
+  .GraphHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 0;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .GraphButtonsContent{
+    display: flex;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+  }
+  
+  .GraphButton{
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  .GraphButtonsArea button:hover{
+    background-color: #7A7D89;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  
+  .Active{
+    background-color: #7A7D89;
+    color: white;
+    border-radius: 5px;
+  }
