@@ -3,7 +3,7 @@ import Holder from "../../Hoc/holder";
 import classes from "./Cases.css";
 import axios from "axios";
 import RedGraph from '../../assets/Graph.svg';  
-import GreenGraph from '../../assets/Green.svg'; 
+import GreenGraph from '../../assets/gren.svg'; 
 
 const Currentcases = (props) => {
   const [cases, setCases] = useState([]);
@@ -15,26 +15,27 @@ const Currentcases = (props) => {
   useEffect(() => {
     // curl --location --request GET 'https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/cases?country=%3Cstring%3E'
     // https://api.thevirustracker.com/free-api?global=stats
-    axios.get("https://api.thevirustracker.com/free-api?global=stats").then((response) => {
-      let fetchedData = response.data.results[0];
+    // https://pomber.github.io/covid19/timeseries.json
+    axios.get("https://corona.lmao.ninja/v2/all").then((response) => {
+      let fetchedData = response.data;
       let updatedCases = [
         ...cases,
         {
           heading: "Total Cases",
-          casesCount: formatCases(fetchedData.total_cases),
+          casesCount: formatCases(fetchedData.updated),
         },
         {
           heading: "Active Cases",
-          casesCount: formatCases(fetchedData.total_active_cases),
+          casesCount: formatCases(fetchedData.active),
         },
         {
           heading: "Recovered",
-          casesCount: formatCases(fetchedData.total_recovered),
+          casesCount: formatCases(fetchedData.recovered),
         },
       
         {
           heading: "Total Deaths",
-          casesCount: formatCases(fetchedData.total_deaths),
+          casesCount: formatCases(fetchedData.deaths),
         },
       ];
       setCases(updatedCases);
@@ -52,7 +53,16 @@ const Currentcases = (props) => {
               <span className={classes.CaseNumber}>{item.casesCount}</span>
             </span>
             <span className={classes.CaseGraph}>
-      {item.heading="Recovered" ? <img src={GreenGraph} alt='greeen'/> : <img src={RedGraph} alt='red' /> }
+            {(() => {
+        switch (item.heading) {
+          case item.heading[0]:   <img src={GreenGraph} />;
+          case "Total Cases": <img src={RedGraph} />;
+          case "Active Cases":  <img src={RedGraph} />;
+          default:      return "#FFFFFF";
+        }
+      })()}
+{/* {item.heading="Recovered" ? <img src={GreenGraph} alt='greeen'/>
+ : <img src={RedGraph} alt='red' /> } */}
       </span> 
           </div>
         </Holder>

@@ -1,8 +1,7 @@
 .NavItem{
   padding: 10px 8px;
   box-sizing: border-box;
-  display: block;
-  width: 100%;
+  margin: 0 1rem;
   text-align: center;
 }
 .NavItem:first-child{
@@ -15,5 +14,5 @@
   color: #40A4C8;
   border-bottom: 4px solid #40A4C8;
   font-size: 20px;
-  transition: 0.3s;
+  transition: 0.4s;
 }

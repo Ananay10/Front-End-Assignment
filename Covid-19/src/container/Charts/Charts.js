@@ -12,7 +12,7 @@ const Coronachart = () => {
     // https://pomber.github.io/covid19/timeseries.json
     // https://covidapi.info/api/v1/country/IND
     axios
-      .get("https://pomber.github.io/covid19/timeseries.json")
+      .get("https://corona.lmao.ninja/v2/all")
       .then((response) => {
         const country = Object.keys(response.data);
         const totalDays = response.data[country[0]].length;

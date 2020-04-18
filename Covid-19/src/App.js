@@ -4,7 +4,10 @@ import Countries from "./container/Countries/Countries";
 import Currentcases from "./container/Cases/Cases";
 import WorldMap from './container/WorldMap/Worldmap';
 import classes from './App.css';
-import Coronachart from './container/Charts/Charts';
+// import Coronachart from './container/Charts/Charts';
+import NewsSection from './container/News/News';
+import RecoveryRatio from './container/RecoveryRatio/Recovery';
+import TwitterFeed from './container/Twitter /Twitter';
 
 const app = () => {
   return (
@@ -14,10 +17,13 @@ const app = () => {
       <div className={classes.MiddleContent}>
       <Countries />
       <WorldMap />
+      <RecoveryRatio />
     
       </div>
      <div className={classes.ChartReport}>
-     <Coronachart />
+     {/* <Coronachart />  */}
+     <NewsSection />
+     <TwitterFeed />
      </div> 
     
     </div>
