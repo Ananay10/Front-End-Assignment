@@ -9,6 +9,7 @@
   
   .CountryHeading{
     display: flex;
+    color: #e5e4e2;
   }
   
   .CountryHeading div{

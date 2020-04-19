@@ -16,7 +16,7 @@ const WorldMap = () => {
     // "https://corona.lmao.ninja/countries?sort=country"
     // https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats
     axios
-      .get("https://corona.lmao.ninja/countries")
+      .get("https://corona.lmao.ninja/countries?sort=country")
       .then((response) => {
         let convertedArray = [];
         response.data.map((country) => {
@@ -37,9 +37,13 @@ const WorldMap = () => {
   }, []);
 
   const Mapicons = {
+    chart: {
+      backgroundColor: 'black',
+    },
     title: {
       text: "",
     },
+  
     mapNavigation: {
       enabled: true,
       buttonOptions: {

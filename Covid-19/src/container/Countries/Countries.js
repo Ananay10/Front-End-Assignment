@@ -52,7 +52,7 @@ useEffect(() => {
             onChange={event => setSearchFilter(event.target.value.trim(''))}
           />
         </div>
-        <div>
+        <div className={classes.Result}>
         {filteredCountries.length>=1 && !loading ? filteredCountries.map((country) => (
           <Country
               key={country.CountryCode} 

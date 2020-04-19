@@ -1,0 +1,39 @@
+.Container{
+    max-width: 97vw;
+    margin: auto;
+  }
+  
+  .Main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .CasesSec{
+    flex: 1;
+  }
+  
+  /* .RightMain{
+    flex: 1;
+    margin: 1rem;
+    margin-right: 0;
+  } */
+  
+  .MiddleContent{
+    display: flex;
+    max-width: 90vw;
+   height: 100vh;
+   flex: 1;
+  } 
+  
+  .LowerCol{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  } 
+  
+  /*
+  .RatioNFeeds{
+    display: flex;
+    flex-direction: column;
+  } */

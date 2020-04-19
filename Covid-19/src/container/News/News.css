@@ -28,7 +28,7 @@ a{
     font-weight: bold;
     margin: 1rem 0;
     font-size: 16px;
-    color: rgb(27, 26, 26);
+    color: #f0fff0;
   }
   
   .NewsInfo{
@@ -49,7 +49,7 @@ a{
   
   .NewsTime{
     color: rgb(27, 26, 26);
-    background-color: #ccc;
+    background-color: #96CDCD;
     font-size: 14px;
     padding: 0.1rem
   }
@@ -87,15 +87,15 @@ a{
     width: 3vw;
     height: 100%;
     background-color: transparent;
-    color: black;
+    color: #1E90FF;
     outline: none;
     border: none;
+    font-size: x-large;
   }
   
   .NavigationButtons:hover{
   
     background-color:  transparent;
-    color: #1E90FF;
     font-size: xx-large;
     transition: 0.3s;
   }

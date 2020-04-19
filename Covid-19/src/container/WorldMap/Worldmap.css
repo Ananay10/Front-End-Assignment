@@ -1,16 +1,21 @@
 .WorldMap{
     flex:2;
+    margin-right: 0.5rem;
+    
+   
   }
   
   .Map{
     margin: 1rem;
     margin-top: 0;
+   width: 50vw;
+   height: 94vh;
+    /* padding-top: 150px; */
   }
   
   .MapHeading{
     display: flex;
-    padding: 3px;
-    border-bottom: 3px solid black;
+    padding:  6px 3px;
     background-color: 	#1E90FF;
   }
   
@@ -20,7 +25,7 @@
   
   .SideHeading{
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .Most{
