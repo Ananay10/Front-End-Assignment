@@ -1,4 +1,14 @@
-.Logo {
+.Logo{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+}
+
+.LogoText {
   display: inline-block;
   color: red;
+  font-size: 20px;
+  margin: 0 0.5rem;
+  font-weight: bold;
 }

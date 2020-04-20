@@ -5,6 +5,9 @@ import axios from "axios";
 import RedGraph from '../../assets/Red.svg';  
 import GreenGraph from '../../assets/green.svg';
 import MRed from '../../assets/MRed.svg'; 
+import Up from '../../assets/Up.svg';
+import Down from '../../assets/Down.svg';
+
 
 const Currentcases = (props) => {
   const [cases, setCases] = useState([]);
@@ -24,19 +27,24 @@ const Currentcases = (props) => {
         {
           heading: "Total Cases",
           casesCount: formatCases(fetchedData.updated),
-        },
-        {
-          heading: "Active Cases",
-          casesCount: formatCases(fetchedData.active),
+          arrow: <img src={Up} />,
         },
         {
           heading: "Recovered",
           casesCount: formatCases(fetchedData.recovered),
+          arrow: <img src={Down} />,
         },
+        {
+          heading: "Active Cases",
+          casesCount: formatCases(fetchedData.active),
+          arrow: <img src={Up} />,
+        },
+       
       
         {
           heading: "Total Deaths",
           casesCount: formatCases(fetchedData.deaths),
+          arrow: <img src={Up} />,
         },
       ];
       setCases(updatedCases);
@@ -50,7 +58,7 @@ const Currentcases = (props) => {
         <Holder key={item.heading}>
           <div className={classes.CaseHolder}>
             <span>
-              <span className={classes.CaseHeading}>{item.heading}</span>
+              <span className={classes.CaseHeading}>{item.heading}<span className={classes.Arrow}></span>{item.arrow}</span>
               <span className={classes.CaseNumber}>{item.casesCount}</span>
             </span>
             <span className={classes.CaseGraph}>

@@ -1,7 +1,7 @@
 .WorldMap{
     flex:2;
-    margin-right: 0.5rem;
-    
+    border-radius: 8px;
+    margin-left: 1rem;
    
   }
   
@@ -15,8 +15,9 @@
   
   .MapHeading{
     display: flex;
-    padding:  6px 3px;
-    background-color: 	#1E90FF;
+    padding:  8px 3px;
+    background-color: 	#FFFFFF;
+    color: #30313A;
   }
   
   .MapHeading div{

@@ -1,25 +1,41 @@
 .Country{
-    box-sizing: border-box;
+   
+  /* width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  box-sizing: border-box;
     font-weight: bold;
     width: 100%;
     margin: 1rem 0;
-    padding: 2px;
+    padding: 4px;
    
+  }
+  .SideImg{
+    justify-self: flex-end;
+    margin-right: 1rem;
+    font-size: 1.2rem
   }
   
   .CountryHeading{
     display: flex;
-    color: #e5e4e2;
+    color: #30313A;
+
   }
   
   .CountryHeading div{
     margin: 0 0.5rem;
     align-self: center;
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 
   .Affected{
     border-right: 1px solid #777;
+    margin-right: 0;
     padding-left: 0;
   }
   
@@ -27,6 +43,7 @@
     color: #888;
     font-size: 12px;
     padding: 0 10px;
+    
   }
   
   

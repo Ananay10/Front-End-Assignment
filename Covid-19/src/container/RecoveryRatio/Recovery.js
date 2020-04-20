@@ -31,7 +31,7 @@ const RecoveryRatio = () => {
         <div className={classes.Heading}>Ratio of Recovery</div>
         <div className={classes.ProgressBarArea}>
           <svg>
-            <circle className={classes.Path} cx="50%" cy="50%" r="90" />
+            <circle className={classes.Path} cx="50%" cy="50%" r="80" />
             <circle
               className={classes.Progress}
               style={{
@@ -39,7 +39,7 @@ const RecoveryRatio = () => {
               }}
               cx="50%"
               cy="50%"
-              r="90"
+              r="80"
             />
           </svg>
           <div className={classes.PercentBox}>

@@ -14,27 +14,34 @@
   }
   
   .CaseHeading{
-    display: block;
-    font-size: 13px;
-    padding-bottom: 1rem;
-    color: #e5e4e2;
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #52586A;
+    font-size: 12px;
     font-weight: bold;
   }
+  .Arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
   
   .CaseNumber{
     display: block;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
-    color: blanchedalmond;
+    color: #30313A;
+    opacity: 1;
   }
   
   .CaseGraph{
     /* flex: 1; */
     margin-left: 1.4rem;
     height: 60px;
-    width: 80px;
-  box-shadow: 0px 0px 4px #40A4C8;
+    width: 75px;
+  /* box-shadow: 0px 0px 4px #40A4C8; */
   border: none;
   outline: none;
   }

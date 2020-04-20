@@ -1,15 +1,9 @@
- /* .TwitterFeeds{
-    padding: 1rem 0;
-    flex: 2;
-  }  */
-  
-  .TwitterFeedsHeading{
+ .TwitterFeedsHeading{
     display: flex;
     font-weight: bold;
     padding: 1rem;
-    padding-bottom: 0.3rem;
     align-items: center;
-    color: #E0EEEE;
+    color: #30313A;
   }
   
   .TwitterFeedsHeading span{
@@ -20,11 +14,10 @@
   }
   
   .TweetList{
-    height: 35vh;
-    width: 30vw;
+    height: 98vh;
+    width: 22vw;
     overflow-y: scroll;
     padding: 0 0.5rem;
-    box-shadow: 10px 0px 8px #40A4C8;;
     border-radius: 4px;
   }
   

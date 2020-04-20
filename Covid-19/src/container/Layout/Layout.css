@@ -12,28 +12,30 @@
     flex: 1;
   }
   
-  /* .RightMain{
-    flex: 1;
-    margin: 1rem;
-    margin-right: 0;
-  } */
+ 
   
   .MiddleContent{
     display: flex;
-    max-width: 90vw;
+    max-width: 93vw;
    height: 100vh;
    flex: 1;
   } 
   
   .LowerCol{
-    padding-top: 20px;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    flex: 1;
   } 
   
-  /*
-  .RatioNFeeds{
+  .RightCol{
+    /* flex: 1; */
+    margin: 1rem;
+    margin-right: 0;
+  }
+  .RatioTweet{
     display: flex;
     flex-direction: column;
-  } */
+  }
+  .tweet{
+    margin-top: 2rem;
+  }

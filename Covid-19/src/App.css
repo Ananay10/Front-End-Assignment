@@ -1,3 +1,31 @@
-.App{
-  background-color: black;
+.App {
+  background-color: #e7e9ec;
+  /* font-family: Montserrat; */
+
+    
 }
+/* @media screen and (max-width: 1024px) 
+  .App {
+    background-color: #e7e9ec; }
+  
+}  */
+
+::-webkit-scrollbar {
+  width: 6px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+  }

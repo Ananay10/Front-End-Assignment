@@ -3,7 +3,7 @@ import classes from "./Layout.css";
 import CurrentCases from "../Cases/Cases";
 import Countries from "../Countries/Countries";
 import WorldMap from "../WorldMap/Worldmap";
-// import Coronachart from "../Charts/Charts";
+import Coronachart from "../Charts/Charts";
 import TwitterCol from "../Twitter /Twitter";
 import NewsUpdate from '../News/News';
 import RecoveryRatio from '../RecoveryRatio/Recovery';
@@ -18,19 +18,25 @@ const layout = () => {
             <div className={classes.MiddleContent}>
               <Countries />
               <WorldMap />
-              <RecoveryRatio />
             </div>
+            
             <div className={classes.LowerCol}>
-              {/* <Coronachart /> */}
+              <Coronachart />
               <NewsUpdate />
-              <TwitterCol />
             </div>
+            </div>
+            <div className={classes.RightCol}>
+            <div className={classes.RatioTweet}>
+              <RecoveryRatio />
+            <div className={classes.tweet}>
+              <TwitterCol /> </div>
+            </div>
+          </div>
           </div>
 
          
         </div>
       </div>
-    </div>
   );
 };
 

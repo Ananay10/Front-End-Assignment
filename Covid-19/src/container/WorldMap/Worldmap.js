@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import mapData from "./Mapdata";
 import Holder from "../../Hoc/holder";
@@ -5,6 +6,7 @@ import classes from "./Worldmap.css";
 import axios from "axios";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+
 
 
 require("highcharts/modules/map")(Highcharts);
@@ -38,11 +40,26 @@ const WorldMap = () => {
 
   const Mapicons = {
     chart: {
-      backgroundColor: 'black',
+      backgroundColor: '#FBF6F6',
+      // events: {
+      //   load: function() {
+      //     this.series[0].data = this.series[0].data.map((el) => {
+      //       if (el['hc-key'] == "sh") {
+      //         el.color = "#ff0000";
+      //         return el;
+      //       }
+      //       if (el['hc-key'] == "ru") {
+      //         el.color = "#0000ff";
+      //         return el;
+      //       } if (el['hc-key'] == 'ca'){
+      //         el.color = "yellow"
+      //         return el
+      //       }  }) } }
     },
     title: {
       text: "",
     },
+   
   
     mapNavigation: {
       enabled: true,
@@ -51,7 +68,7 @@ const WorldMap = () => {
         // float: "right",
       },
     },
-   
+    colorAxis: { colors: ["#ffC4C6", "#ff797D", "#ff6f7d", "#ff0019"] },
 
     series: [
       {

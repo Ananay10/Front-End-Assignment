@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Holder from "../../Hoc/holder";
-import axios from "axios";
-import { LineChart, Line, XAxis, YAxis, Tooltip } from "react-chartjs-2";
+import React, { useState,useEffect } from "react";
+import Holder from '../../Hoc/holder';
+import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import classes from "./Charts.css";
+import axios from 'axios';
 
 const Coronachart = () => {
   const [graphData, setGraphData] = useState([]);
@@ -12,7 +12,7 @@ const Coronachart = () => {
     // https://pomber.github.io/covid19/timeseries.json
     // https://covidapi.info/api/v1/country/IND
     axios
-      .get("https://corona.lmao.ninja/v2/all")
+      .get("https://pomber.github.io/covid19/timeseries.json")
       .then((response) => {
         const country = Object.keys(response.data);
         const totalDays = response.data[country[0]].length;
@@ -97,3 +97,67 @@ const Coronachart = () => {
 };
 
 export default Coronachart;
+
+
+// const CoronaChart = props => {
+//   const [graphType, setGraphType] = useState("Total Cases");
+
+//   return (
+//     <div className={classes.SpreadTrends}>
+//       <Holder>
+//         <div className={classes.GraphHeading}>
+//           <div>
+//             <p>Spread Trends</p>
+//           </div>
+//           <div className={classes.GraphButtonsArea}>
+//             <button
+//               className={
+//                 graphType === "Total Cases"
+//                   ? [classes.GraphButton, classes.Active].join(" ")
+//                   : classes.GraphButton
+//               }
+//               onClick={() => setGraphType("Total Cases")}
+//             >Confirmed</button>
+
+//             <button
+//               className={
+//                 graphType === "Recovered"
+//                   ? [classes.GraphButton, classes.Active].join(" ")
+//                   : classes.GraphButton
+//               }
+//               onClick={() => setGraphType("Recovered")}
+//             >Recovered</button>
+
+//             <button
+//               className={
+//                 graphType === "Total Deaths"
+//                   ? [classes.GraphButton, classes.Active].join(" ")
+//                   : classes.GraphButton
+//               }
+//               onClick={() => setGraphType("Total Deaths")}
+//             >Deceased</button>
+
+//           </div>
+//         </div>
+//         <div className={classes.Graph}>
+//           <LineChart width={420} height={151} data={props.casesByTimeline} >
+//             <YAxis tick={{ fontSize: "12px" }} orientation="right" padding={{ bottom: 10}}/>
+//             <Tooltip />
+//             <Line
+//               type="monotone"
+//               dataKey={graphType}
+//               stroke={graphType==='Recovered' ? "#06BA90" : "#FF6C75" }
+//               strokeWidth={2}
+//               isAnimationActive={true}
+//               dot={false}
+//             />
+//             <XAxis dataKey="date" tick={{ fontSize: "12px" }} padding={{ right: 10 }}/>
+//           </LineChart>
+//         </div>
+//       </Holder>
+//     </div>
+//   );
+// };
+
+
+// export default CoronaChart;

@@ -1,18 +1,18 @@
 .NavItem{
-  padding: 10px 8px;
+  padding: 15px 8px;
   box-sizing: border-box;
   margin: 0 1rem;
   text-align: center;
+  color: #52586A;
 }
 .NavItem:first-child{
   border-bottom: 4px solid red;
-    color: red;
 }
 .NavItem:hover,
 .NavItem:active,
 .NavItem.active {
-  color: #40A4C8;
-  border-bottom: 4px solid #40A4C8;
+  color: #7E191B;
+  border-bottom: 4px solid #7E191B;
   font-size: 20px;
   transition: 0.4s;
 }

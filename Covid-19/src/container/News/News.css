@@ -1,6 +1,6 @@
 a{
     text-decoration: none;
-    background-color: 	#1E90FF; 
+    background-color: 	#FFEAEB; 
     font-size: 14px;
     font-weight: bold;
   }
@@ -28,7 +28,7 @@ a{
     font-weight: bold;
     margin: 1rem 0;
     font-size: 16px;
-    color: #f0fff0;
+    color: #30313A;
   }
   
   .NewsInfo{
@@ -40,7 +40,8 @@ a{
   
   .NewsInfo>span{
     display: inline-block;
-    background-color:#1E90FF;
+    background-color: #FFEAEB;
+    color: #FF0019;
     padding: 0.5rem;
     border-radius: 5px;
     font-weight: bold;
@@ -48,7 +49,7 @@ a{
   }
   
   .NewsTime{
-    color: rgb(27, 26, 26);
+    color:#30313A;
     background-color: #96CDCD;
     font-size: 14px;
     padding: 0.1rem
@@ -68,13 +69,13 @@ a{
   .NewsDesc>span>a{
       padding: 10px;
       font-weight: bold;
-      color: white;
+      color: #FF0019;
       border-radius: 4px;
   }
   
   .NewsDesc>span>a:hover{
     background-color: transparent;
-    color: #1E90FF;
+    color: #FF0019;
     font-size: 18px;
     transition: 0.3s;
   }

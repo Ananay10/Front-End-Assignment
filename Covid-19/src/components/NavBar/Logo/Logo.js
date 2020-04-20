@@ -4,9 +4,9 @@ import classes from './Logo.css';
 
 const covidlogo = () => {
   return (
-    <div>
+    <div className={classes.Logo}>
       <img src={CovidLogo}/>
-      <h3 className={classes.Logo}>COVID'19</h3>
+      <span className={classes.LogoText}>COVID'19</span>
     </div>
   );
 };

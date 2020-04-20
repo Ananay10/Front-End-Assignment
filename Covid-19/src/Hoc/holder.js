@@ -3,7 +3,7 @@ import classes from './holder.css';
 
 const holder = props => {
   return (
-    <div className={classes.Card}>
+    <div className={classes.Holder}>
       {props.children}
     </div>
   );

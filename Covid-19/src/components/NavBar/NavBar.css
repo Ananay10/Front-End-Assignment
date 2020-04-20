@@ -1,7 +1,7 @@
 .NavBar {
-  background-color: black;
-  box-shadow: 0px 0px 10px #bbb;
-  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px red;
+  width: 111vw;
   margin: auto;
   display: flex;
   justify-content: space-between;
